@@ -16,5 +16,5 @@
 |:-:|:-|:-: | :-: | :-: |
 |[964](https://leetcode.com/problems/least-operators-to-express-number/)| * Best time to buy and sell stocks II :new: |35%|Hard||
 |[963](https://leetcode.com/problems/minimum-area-rectangle-ii/)| * Delete duplicates from sorted arrays :new: |34%|Medium|&hearts;|
-|[962](https://leetcode.com/problems/maximum-width-ramp/)| * Maximum Width Ramp :new: |33%|Medium|&hearts;|
-|[961](https://leetcode.com/problems/n-repeated-element-in-size-2n-array/)| * Move zeroes :new: |75%|Easy| &hearts;|
+|962| * Maximum Width Ramp :new: |33%|Medium|&hearts;|
+|283| * Move zeroes :new: |75%|Easy| &hearts;|
