@@ -1,5 +1,6 @@
 # [LeetCode](https://leetcode.com) 的 C 解答
 
+[![license](http://img.shields.io/badge/license-Apache2.0-brightgreen.svg?style=flat)](https://github.com/beifangguniang/leetcode-traing)
 
 ## 进度
 
