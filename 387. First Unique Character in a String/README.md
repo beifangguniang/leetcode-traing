@@ -24,17 +24,20 @@ s = "loveleetcode",
 3. 再一次遍历原数组，直接查看s[i]对应在字母数组中的值是否为1，如果是，直接返回i，如果不是，继续遍历；到最后也没有找到出现一次的字母，返回-1。
 
 **补充知识**
-strlen()  计算字符串长度的库函数名
+strlen()
+* 计算字符串长度的库函数名
 strlen(char*）函数求的是字符串的实际长度，它求得方法是从开始到遇到第一个'\0'，
 如果你只定义没有给它赋初值，这个结果是不定的，它会从aa首地址一直找下去，直到遇到'\0'停止。
 如果字符的个数等于字符数组的大小，那么strlen()的返回值就无法确定了，
+ ```
  char str[6] = "abcxyz";
  strlen(str)的返回值将是不确定的。因为str的结尾不是0，strlen()会继续向后检索，直到遇到'\0'，而这些区域的内容是不确定的。
+ ```
 
 memset()
-memset作用是将某一块内存中的内容全部设置为指定的值， 这个函数通常为新申请的内存做初始化工作,
-函数解释：将s中当前位置后面的n个字节 （typedef unsigned int size_t ）用 ch 替换并返回 s 。
-memset：作用是在一段内存块中填充某个给定的值，它是对较大的结构体或数组进行清零操作的一种最快方法
-memset()函数原型是extern void *memset(void *buffer, int c, int count) buffer：
-为指针或是数组,c：是赋给buffer的值,count：是buffer的长度.
+* memset作用是将某一块内存中的内容全部设置为指定的值， 这个函数通常为新申请的内存做初始化工作,
+* 函数解释：将s中当前位置后面的n个字节 （typedef unsigned int size_t ）用 ch 替换并返回 s 。
+* memset：作用是在一段内存块中填充某个给定的值，它是对较大的结构体或数组进行清零操作的一种最快方法
+* memset()函数原型是extern void *memset(void *buffer, int c, int count) buffer：
+* 为指针或是数组,c：是赋给buffer的值,count：是buffer的长度.
 sizeof()
