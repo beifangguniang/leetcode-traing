@@ -1,15 +1,15 @@
-int reverse(int x) {
-    int num = 0;
-    while(x)
-    {
-        //¼ÇÂ¼num¸Ä±äÖ®Ç°µÄÖµ²¢ÓÃÒÑ¸Ä±äµÄÊıÀ´ÄæÏòÍÆ¶ÏÊÇ·ñÏàµÈ£¬²»µÈÓÚËµÃ÷ÊÇÒç³öÁË£¬·µ»Ø0
-        int temp = num*10 + x%10;
-        if(temp/10 != num)       
-        {
-            return 0;
-        }
-        x = x/10;
-        num = temp;
+void moveZeroes(int* nums, int numsSize) {
+    int tempSize = 0;  //ç›®å‰å·²ç»åŠ å…¥å¤šå°‘ä¸ªæ•°å­—
+    //æŠŠnumsä¸­ä¸æ˜¯0çš„ä¾åºæ’å…¥åœ¨tempé˜µåˆ—ä¸­
+    for (int i = 0; i < numsSize; i++ ){
+        if (nums[i] !=0){
+            nums[tempSize] = nums[i];
+            tempSize++;    
+        }  
     }
-    return num;
+    // å°†å‰©ä¸‹çš„å…ƒç´ å…¨éƒ¨å¡«æˆ 0
+    while (tempSize < numsSize){
+        nums[tempSize] = 0;
+        tempSize++;
+    }
 }
